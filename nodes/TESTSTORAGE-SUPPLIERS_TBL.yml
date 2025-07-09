@@ -1,0 +1,149 @@
+fileVersion: 1
+id: 0c262415-67dc-43e4-aa02-5352d0c5340e
+name: SUPPLIERS_TBL
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: TESTSTORAGE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e7bc736-01e6-48b8-ae61-79980d51cb65
+          stepCounter: 0c262415-67dc-43e4-aa02-5352d0c5340e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: S_SUPPKEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d98c4fa6-7a6a-45a9-8ef7-34762609e11d
+          stepCounter: 0c262415-67dc-43e4-aa02-5352d0c5340e
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: S_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5bfcea3-fc78-4617-9d53-d4d3bed4ee92
+          stepCounter: 0c262415-67dc-43e4-aa02-5352d0c5340e
+        config: {}
+        dataType: VARCHAR(40)
+        defaultValue: ""
+        description: ""
+        name: S_ADDRESS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4853cf79-98d9-47cc-84cc-5f363dc921b1
+          stepCounter: 0c262415-67dc-43e4-aa02-5352d0c5340e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: S_NATIONKEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d52cceb-86e3-4392-9142-c0885e0e622c
+          stepCounter: 0c262415-67dc-43e4-aa02-5352d0c5340e
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: S_PHONE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f2ec5ae-0549-4b94-ab11-c5c09ec82759
+          stepCounter: 0c262415-67dc-43e4-aa02-5352d0c5340e
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: S_ACCTBAL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d68ced27-70bd-49c4-81c8-768295ed134a
+          stepCounter: 0c262415-67dc-43e4-aa02-5352d0c5340e
+        config: {}
+        dataType: VARCHAR(101)
+        defaultValue: ""
+        description: ""
+        name: S_COMMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SUPPLIERS_TBL
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
