@@ -1,0 +1,89 @@
+fileVersion: 1
+id: 8ac04a91-0cb0-44a5-8a3e-02ddcf5c2dfb
+name: STG_Customer
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: true
+        columnReference:
+          columnCounter: a36b54ca-ae74-4a4f-a213-e253306ef6fe
+          stepCounter: 8ac04a91-0cb0-44a5-8a3e-02ddcf5c2dfb
+        config: {}
+        dataType: number(38,0)
+        description: ""
+        name: customer_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77e8c81d-0f56-4f07-95dc-744d9b168762
+                stepCounter: 0dac9b04-f476-4741-8bd6-828d2ac90aaa
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 7b5f0703-8ccb-4b8e-8cc9-ee2eca3b37c9
+          stepCounter: 8ac04a91-0cb0-44a5-8a3e-02ddcf5c2dfb
+        config: {}
+        dataType: string
+        description: ""
+        name: name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a976ffc-a994-4291-8a68-6ae58523c9a1
+                stepCounter: 0dac9b04-f476-4741-8bd6-828d2ac90aaa
+            transform: ""
+      - appliedColumnTests:
+          hasNull: true
+          isDistinct: false
+        columnReference:
+          columnCounter: e5570262-8390-4c23-b6d5-18cb16fb7459
+          stepCounter: 8ac04a91-0cb0-44a5-8a3e-02ddcf5c2dfb
+        config: {}
+        dataType: string
+        description: ""
+        name: email
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf2a4fc1-930e-49fc-a757-15a5dba9fe59
+                stepCounter: 0dac9b04-f476-4741-8bd6-828d2ac90aaa
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs:
+      - hasNull
+      - isDistinct
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW
+            nodeName: Customer
+        join:
+          joinCondition: FROM {{ ref('RAW', 'Customer') }} "Customer"
+        name: STG_Customer
+        noLinkRefs: []
+  name: STG_Customer
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

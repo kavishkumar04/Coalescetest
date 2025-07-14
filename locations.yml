@@ -1,5 +1,7 @@
-defaultStorageMapping: null
+defaultStorageMapping: RAW
 fileVersion: 1
 locations:
+  - PERSISTENTSTAGE
+  - RAW
   - STAGE
   - TESTSTORAGE
